@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Affairs</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-gap: 20px;
+        }
+        .news-item {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 200px;
+            cursor: pointer;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        .news-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007BFF;
+            grid-column: 1;
+        }
+        .news-date {
+            font-size: 14px;
+            font-style: italic;
+            color: #888;
+            grid-column: 1;
+        }
+        .news-content {
+            line-height: 1.8;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            grid-column: 1;
+            opacity: 0.8;
+        }
+        .news-content:hover {
+            opacity: 1;
+        }
+        .read-more {
+            padding: 8px 12px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            justify-self: end;
+        }
+        .read-more:hover {
+            background-color: #0056b3;
+        }
+        .mobile-menu {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: #007BFF;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 60px;
+            width: 60px;
+            border-radius: 0 0 0 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .mobile-menu span {
+            font-size: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+                margin: 20px 0;
+            }
+            .news-title {
+                font-size: 24px;
+            }
+            .news-date {
+                font-size: 12px;
+            }
+            .news-item {
+                min-height: 180px;
+            }
+            .mobile-menu {
+                display: flex;
+            }
+            .container {
+                padding-top: 80px;
+            }
+        }
+           
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Current Affairs</h1>
+    </header>
+    <div class="container">
+        <div class="news-item">
+            <div class="news-title">New Gecko Species Discovered in Mizoram</div>
+            <div class="news-date">November 15,2023</div>
+            <div class="news-content">
+               
+Researchers have recently identified a new species of gecko in India, specifically in the town of Vairengte in Mizoram. Named ‘Cyrtodactylus vairengtensis’ after its place of discovery, this gecko species is characterized by distinct features, particularly the number of femoral .. 
+            </div>
+            <a href="New Gecko" class="read-more">Read More →</a>
+        </div>
+
+        <div class="news-item">
+            <div class="news-title">Researchers Discover Two New Species of Seer Fish in Indian Waters</div>
+            <div class="news-date">November 15, 2023</div>
+            <div class="news-content">
+                Researchers at the ICAR-Central Marine Fisheries Research Institute (CMFRI) have made a significant discovery by identifying two new species of seer fish. Led by principal scientist E M Abdussamad, the team of taxonomists unveiled the Arabian sparrow seer fish (Scomberomorus ..
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+     <div class="news-item">
+            <div class="news-title">Post-Diwali Air Quality Worsens in Indian Cities, Delhi Tops the List</div>
+            <div class="news-date">November 15, 2023</div>
+            <div class="news-content">
+                The aftermath of Diwali has witnessed deteriorating air quality in nine out of eleven Indian cities compared to the previous year, with Delhi ranking at the highest level of pollution, according to data from the National Clean Air Campaign (NCAP) ..
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+         <div class="news-item">
+            <div class="news-title">Hyderabad’s Sadar Festival: A Carnival Celebrating Buffalo Cattle</div>
+            <div class="news-date">November 15, 2023</div>
+            <div class="news-content">
+               Hyderabad is gearing up for the annual Sadar festival, a lively celebration centered around buffalo cattle, held every year on the second day after Diwali. This vibrant festival is a cherished tradition of the Yadav community and is also known ..
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+          <div class="news-item">
+            <div class="news-title">Maharashtra’s Climate-Resilient Agriculture Project Faces Funding Disparities and Sustainability Concerns</div>
+            <div class="news-date">November 15, 2023</div>
+            <div class="news-content">
+                Since 2018, Maharashtra has initiated a pioneering project known as the Project on Climate Resilient Agriculture (pocra), aimed at helping farmers transition to climate change-resilient practices. This ambitious endeavor, implemented in 16 out of the state’s 36 districts, is touted ..
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+        <!-- Add more news items as needed -->
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <span>&#9776;</span>
+    </div>
+
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const container = document.querySelector('.container');
+
+        mobileMenu.addEventListener('click', () => {
+            container.classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
